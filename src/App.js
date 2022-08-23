@@ -3,7 +3,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>Welcome</h1>
+      <h1>Space Travelers Hub</h1>
     </div>
   );
 }
