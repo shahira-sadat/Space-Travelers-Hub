@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   BrowserRouter as Router, Routes,
   Route,
@@ -10,6 +11,7 @@ import Missions from './components/Missions';
 import MyProfile from './components/MyProfile';
 
 function App() {
+  // className={({ isActive }) => (isActive ? 'active' : 'inactive')}
   return (
     <div className="App">
       <Router>

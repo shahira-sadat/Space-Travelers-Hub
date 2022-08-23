@@ -43,3 +43,11 @@
   letter-spacing: 2px;
   margin: 0 15px;
 }
+
+.active {
+  background-color: #2088ff;
+}
+
+.inactive {
+  background-color: #fff;
+}
