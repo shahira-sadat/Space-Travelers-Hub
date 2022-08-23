@@ -3,12 +3,18 @@
 }
 
 .nav--bar {
-  border: 1px solid red;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 1rem;
-  background-color: #f5f5f5;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-items: center;
+  box-sizing: border-box;
+  background-color: white;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 10px 50px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .nav--bar--logo {
@@ -36,10 +42,19 @@
 }
 
 .nav--link {
-  color: #2088ff;
+  color: rgb(48, 101, 216);
   font-family: Montserrat, sans-serif;
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 600;
   letter-spacing: 2px;
   margin: 0 15px;
+  text-decoration-style: dotted;
+}
+
+.active {
+  color: #2088ff;
+}
+
+.inactive {
+  text-decoration: none;
 }
