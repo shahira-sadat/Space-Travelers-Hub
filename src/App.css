@@ -3,7 +3,6 @@
 }
 
 .nav--bar {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,9 +44,9 @@
 }
 
 .active {
-  background-color: #2088ff;
+  color: #2088ff;
 }
 
 .inactive {
-  background-color: #fff;
+  text-decoration: none;
 }
