@@ -26,3 +26,20 @@
   font-weight: bold;
   margin-left: 15px;
 }
+
+.nav--bar--links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 15px;
+}
+
+.nav--link {
+  color: #2088ff;
+  font-family: Montserrat,sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 0 15px;
+}
