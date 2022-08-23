@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import logo from '../assets/images/planet.png';
 
 const Nav = () => (
@@ -9,9 +10,24 @@ const Nav = () => (
         <h1 className="nav--title">Space Travelers' Hub</h1>
       </div>
       <div className="nav--bar--links">
-        <a className="nav--link" href="/">Rockets</a>
-        <a className="nav--link" href="/">Missions</a>
-        <a className="nav--link" href="/MyProfile">My Profile</a>
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? 'active nav--link' : 'inactive nav--link')}
+        >
+          Rockets
+        </NavLink>
+        <NavLink
+          to="/Missions"
+          className={({ isActive }) => (isActive ? 'active nav--link' : 'inactive nav--link')}
+        >
+          Missions
+        </NavLink>
+        <NavLink
+          to="/MyProfile"
+          className={({ isActive }) => (isActive ? 'active nav--link' : 'inactive nav--link')}
+        >
+          My Profile
+        </NavLink>
       </div>
     </nav>
   </>
