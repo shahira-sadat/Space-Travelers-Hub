@@ -11,7 +11,7 @@ const Nav = () => (
       <div className="nav--bar--links">
         <a className="nav--link" href="/">Rockets</a>
         <a className="nav--link" href="/">Missions</a>
-        <a className="nav--link" href="/">My Profile</a>
+        <a className="nav--link" href="/MyProfile">My Profile</a>
       </div>
     </nav>
   </>
