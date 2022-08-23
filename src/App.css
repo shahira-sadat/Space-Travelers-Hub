@@ -48,5 +48,13 @@
   font-weight: 600;
   letter-spacing: 2px;
   margin: 0 15px;
+  text-decoration-style: dotted;
+}
+
+.active {
+  color: #2088ff;
+}
+
+.inactive {
   text-decoration: none;
 }
