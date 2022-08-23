@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logo from '../assets/images/planet.png';
 
 const Nav = () => (
@@ -9,10 +10,10 @@ const Nav = () => (
         <h1 className="nav--title">Space Travelers' Hub</h1>
       </div>
       <div className="nav--bar--links">
-        <a className="nav--link" href="/">Rockets</a>
-        <a className="nav--link" href="/">Dragons</a>
-        <a className="nav--link" href="/">Missions</a>
-        <a className="nav--link" href="/">My Profile</a>
+        <Link to="/" className="nav--link">Rockets</Link>
+        <Link to="Dragons" className="nav--link" href="/">Dragons</Link>
+        <Link to="Missions" className="nav--link" href="/">Missions</Link>
+        <Link to="MyProfile" className="nav--link" href="/">My Profile</Link>
       </div>
     </nav>
   </>
