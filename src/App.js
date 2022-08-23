@@ -2,8 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Nav from './components/Nav';
 import MyProfile from './components/MyProfile';
-import Rockets from './redux/rockets/rockets';
-import Missions from './redux/missions/missions';
+import Rockets from './components/Rockets';
 
 function App() {
   return (
@@ -12,7 +11,6 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<Rockets />} />
-          <Route path="Missions" element={<Missions />} />
           <Route path="MyProfile" element={<MyProfile />} />
         </Routes>
       </div>
