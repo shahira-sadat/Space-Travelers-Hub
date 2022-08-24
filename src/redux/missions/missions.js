@@ -1,24 +1,43 @@
-import axios from 'axios';
+// import axios from 'axios';
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
-const apiMissions = 'https://api.spacexdata.com/v3/rockets';
+const baseURL = 'https://api.spacexdata.com/v3/missions';
+const initialState = [];
 
-const FETCH_MISSIONS = 'space-travelers-hub/missions/FETCH_MISSIONS';
-// const GET_MISSIONS = 'space-travelers-hub/missions/GET_MISSIONS';
-export const fetchMissions = createAsyncThunk(
-  FETCH_MISSIONS,
+export const getMissions = createAsyncThunk(
+  'missions/getMissions',
   async () => {
-    const response = await axios.get(apiMissions);
-    return response.data;
+    const response = await fetch(baseURL, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+
+    });
+    if (response.ok) {
+      return response.json();
+    }
+    throw response;
   },
 );
 
-const storeSlice = createSlice({
-  name: 'space-travelers-hub/missions',
-  initialState: [],
-  extraReducers: {
-    [fetchMissions.fulfilled]: (state, action) => action.payload,
+export const missionsSlice = createSlice({
+  name: 'missions',
+  initialState,
+  reducers: {
+    reserve: (state, action) => state.map((mission) => {
+      if (mission.mission_id !== action.payload.mission.mission_id) {
+        return mission;
+      }
+      return { ...mission, reserved: !mission.reserved };
+    }),
+  },
+  extraReducers: (builder) => {
+    // Add reducers for additional action types here, and handle loading state as needed
+    builder.addCase(getMissions.fulfilled, (state, action) => action.payload);
   },
 });
 
-export default storeSlice.reducer;
+// Action creators are generated for each case reducer function
+export const { reserve } = missionsSlice.actions;
+export default missionsSlice.reducer;
