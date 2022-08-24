@@ -1,8 +1,19 @@
-import React from 'react';
+const SET_RESERVATION = 'Space/Rocket/SET_RESERVATION';
 
-const rocket = () => (
-  <div>
-    <h1>Under Construction</h1>
-  </div>
-);
-export default rocket;
+const initialState = [];
+
+export const setReservation = (payload) => ({
+  type: SET_RESERVATION,
+  payload,
+});
+
+const reducer = (state = initialState, action) => {
+  switch (action.type) {
+    case SET_RESERVATION:
+      return state.concat(action.payload);
+    default:
+      return state;
+  }
+};
+
+export default reducer;
