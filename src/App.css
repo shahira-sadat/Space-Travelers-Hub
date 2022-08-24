@@ -60,7 +60,7 @@
 }
 
 .missions-page {
-  margin:2.5rem;
+  margin: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,7 +110,7 @@ th {
   line-height: 1.2;
   font-size: 0.8rem;
   font-weight: 400;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular',sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
   word-spacing: 2px;
   text-align: justify;
   padding: 1rem 1.2rem;
