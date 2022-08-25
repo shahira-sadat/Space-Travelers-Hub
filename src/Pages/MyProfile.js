@@ -1,7 +1,9 @@
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { reserveMission } from '../redux/missions/missions';
 import '../App.css';
 
 const Profile = () => {
+  const dispatch = useDispatch();
   const missionList = useSelector((state) => state.missions);
   const missionReserved = missionList.filter((mission) => mission.reserved === true);
 
@@ -16,7 +18,19 @@ const Profile = () => {
           ? <li className="no-mission">No Missions Reserved</li>
           : missionReserved.map((mission) => (
             <li key={mission.mission_id} className="mission-wrapper">
-              <h4 className="name">{mission.mission_name}</h4>
+              <h4 className="name">
+                {mission.mission_name}
+                <a href={mission.wikipedia} target="blank" className="wikipedia">
+                  Learn more...
+                </a>
+              </h4>
+              <button
+                className={mission.reserved ? 'leave-mission' : 'join'}
+                type="button"
+                onClick={() => dispatch(reserveMission({ mission }))}
+              >
+                {mission.reserved ? 'Cancel Mission' : 'Join Mission' }
+              </button>
             </li>
           ))}
       </ul>
