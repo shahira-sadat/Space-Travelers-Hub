@@ -7,9 +7,13 @@
 
 ## Built With
 
+- HTML
+- CSS
 - JavaScript
 - React
-- CSS
+- Redux
+- Linters
+
   
 ## Getting Started
 
@@ -36,11 +40,6 @@ To get a local copy up and running follow these simple example steps.
     npm run deploy
 
 
-## Live Demo
-
-Can check the live demo [here]()
-
-
 ## Authors
 👤 Shahira Sadat
 
@@ -49,8 +48,6 @@ Can check the live demo [here]()
 - Linkedin: [Shahira Sadat](https://www.linkedin.com/in/shahira-sadat-49b402199)
 - Gmail: shahira.sadat1@gmail.com
   
-
-## Authors
 👤 Muhyideen Elias
 
 GitHub: @fourteen98
