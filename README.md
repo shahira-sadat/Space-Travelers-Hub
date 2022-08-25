@@ -2,6 +2,8 @@
 > This is a web application that provides commercial and scientific space travel services. 
 > The application will allow users to book rockets and join selected space missions.
 
+## Live Demo
+[Space Travelers' Hub](https://630733198d53a95fb699dec3--dreamy-blini-ee4660.netlify.app/)
 
 ## Built With
 
