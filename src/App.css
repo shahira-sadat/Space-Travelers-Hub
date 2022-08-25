@@ -48,7 +48,7 @@
   font-weight: 600;
   letter-spacing: 2px;
   margin: 0 15px;
-  text-decoration-style: dotted;
+  text-decoration: underline;
 }
 
 .active {
@@ -139,6 +139,7 @@ span {
 
 .join {
   padding: 8px;
+  width: 8rem;
 }
 
 .join:hover {
@@ -152,6 +153,7 @@ span {
 }
 
 .leave-mission {
+  width: 8rem;
   color: #bd0f0f;
   border: 1px solid  #e02828;
   padding: 8px;
@@ -285,4 +287,11 @@ span {
   background-color: rgba(185, 80, 72, 0.822);
   border-radius: 3px;
   border: transparent;
+}
+
+.wikipedia{
+  padding: 0.3rem;
+  margin: 0.5rem;
+  text-decoration: none;
+  font-size: 12px;
 }
