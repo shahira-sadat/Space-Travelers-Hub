@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getRockets } from '../redux/rockets/rockets';
-import RocketsCard from './RocketCard';
+import RocketsCard from '../components/RocketCard';
 
 function RocketsList() {
 // Use useSelector() to select the state slices and render lists of rockets in corresponding routes

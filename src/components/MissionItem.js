@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { reserve } from '../redux/missions/missions';
+import { reserveMission } from '../redux/missions/missions';
 import '../App.css';
 
 const MissionItem = (props) => {
@@ -19,7 +19,7 @@ const MissionItem = (props) => {
         <button
           className={mission.reserved ? 'leave-mission' : 'join'}
           type="button"
-          onClick={() => dispatch(reserve({ mission }))}
+          onClick={() => dispatch(reserveMission({ mission }))}
         >
           {mission.reserved ? 'Cancel Mission' : 'Join Mission' }
         </button>
