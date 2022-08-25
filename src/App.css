@@ -252,17 +252,16 @@ span {
   margin-top: 120px;
   margin-bottom: 2rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: flex-start;
-  width: 90%;
+  width: 60%;
   color: #000;
   font-family: var(--roboto);
 }
 
 .missions-profile {
-  width: 50%;
+  flex: 1;
 }
-
 
 .mission-wrapper {
   margin-top: 0.5rem;
@@ -270,7 +269,20 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1.5px solid #919191;
-  background: red;
+  background-color: transparent;
+  border: 1px solid gray;
 }
 
+.no-mission {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+  padding-left: 1rem;
+  height: 3rem;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(185, 80, 72, 0.822);
+  border-radius: 3px;
+  border: transparent;
+} 
