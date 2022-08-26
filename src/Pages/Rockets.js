@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getRockets } from '../redux/rockets/rockets';
-import RocketsCard from '../components/RocketCard';
+import Rockets from '../components/Rockets';
 
 function RocketsList() {
 // Use useSelector() to select the state slices and render lists of rockets in corresponding routes
@@ -13,9 +13,15 @@ function RocketsList() {
   }, []);
 
   return (
-    <>
-      {rockets.map((rocket) => <RocketsCard key={rocket.rocketId} rocket={rocket} />)}
-    </>
+    <div className="rockets-container">
+      <ul className="rockets-list">
+        {rockets.map((rocket) => (
+          <li key={rocket.id}>
+            <Rockets rocket={rocket} />
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
 
