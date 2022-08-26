@@ -41,16 +41,14 @@ To get a local copy up and running follow these simple example steps.
 
 
 ## Authors
-👤 Shahira Sadat
+👤 **Shahira Sadat**
 
 - GitHub: [Shahira Sadat](https://github.com/shahira-sadat)
 - Twitter: [Shahira Sadat](https://twitter.com/SadatShahira)
 - Linkedin: [Shahira Sadat](https://www.linkedin.com/in/shahira-sadat-49b402199)
 - Gmail: shahira.sadat1@gmail.com
   
-👤 Muhyideen Elias
-
-GitHub: @fourteen98
+👤 **Muhyideen Elias**
 
 - GitHub: [fourteen98](https://github.com/Fourteen98/)
 - Twitter: [muhiydeen](https://twitter.com/muhiydeen)
